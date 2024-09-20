@@ -7,6 +7,7 @@ public class HelloDemo extends JFrame{
     private JPanel PannelMain;
     private JTextField textField1;
     private JButton button1;
+    private JLabel messaggio;
 
     public HelloDemo() {
         button1.addActionListener(new ActionListener() {
@@ -14,6 +15,7 @@ public class HelloDemo extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(button1,textField1.getText());
                 System.out.println(textField1.getText());
+                messaggio.setText(textField1.getText());
             }
         });
     }
@@ -27,4 +29,6 @@ public class HelloDemo extends JFrame{
         h.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
+
+
 }
